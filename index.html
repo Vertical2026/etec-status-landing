@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="only light">
     <title>ETEC STATUS — Matrículas Abertas 2026 | Curso Técnico MEC</title>
     <meta name="description" content="Matrículas abertas para cursos técnicos presenciais na ETEC STATUS. Mecânica, Eletrotécnica, Eletromecânica, Segurança do Trabalho e Administração.">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+
+        /* FORCE COLORS - ignore system dark/light mode */
+        :root {
+            color-scheme: only light;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --orange: #F5A623;
+                --orange-dark: #E08800;
+                --red: #D0021B;
+                --black: #0A0A0A;
+                --dark: #111111;
+                --dark2: #1A1A1A;
+                --white: #FFFFFF;
+                --gray: #888;
+                --light-gray: #f4f4f4;
+            }
+            body {
+                background: #111111 !important;
+                color: #FFFFFF !important;
+            }
+        }
+
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
